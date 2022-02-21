@@ -1,13 +1,93 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+
+  background-image: url(images/AP19235793396782.jpg);
+  background-size: 100%;
+
+  text-align: center;
+
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol, ul {
+  padding-left: 30px;
+  color: white;
+  margin: auto;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+  margin: 0px;
+
+}
+
+.status {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.square {
+
+  background: #00000050;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 50px;
+  /* margin-right: -1px;
+  margin-top: -1px; */
+  padding: 0;
+  margin: 0px;
+  text-align: center;
+  width: 50px;
+  color: white;
+  position: relative;
+
+
+}
+
+.square:hover{
+  color: yellow;
+  background-color: red;
+}
+
+.square:focus {
+  outline: yellow;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  margin-left: auto;
+
+
+}
+
+
+.game-info {
+  margin: auto;
+  color:white;
+
+
+}
+
+
+.welcome{
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(255,255,255,.2);
+  text-align: center;
+
+}
+
+.content{
+  margin: auto;
+  max-width: 500px;
+
 }
